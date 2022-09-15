@@ -13,12 +13,12 @@ export class PokemonCaught extends PokemonWild {
           <i class="mdi mdi-pokeball"></i>
           <span>${this.nickName ? this.nickName : this.name}</span>
         </div>
-        <div class="d-flex gap-2 justify-content-end align-items-center icons">
+        <div class="d-flex gap-2 justify-content-end align-items-center icons on-hover">
           <div>
-            <i class="mdi mdi-human-edit on-hover selectable edit-icon" onclick="app.pokemonsCaughtController.renamePokemon('${this.id}')"></i>
+            <i class="mdi mdi-human-edit selectable edit-icon" onclick="app.pokemonsCaughtController.renamePokemon('${this.id}')"></i>
           </div>
           <div>
-            <i class="mdi mdi-delete on-hover selectable delete-icon" onclick="app.pokemonsCaughtController.releasePokemon('${this.id}')"></i>
+            <i class="mdi mdi-delete selectable delete-icon" onclick="app.pokemonsCaughtController.releasePokemon('${this.id}')"></i>
           </div>
         </div>
       </div>
