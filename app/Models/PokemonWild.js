@@ -10,7 +10,7 @@ export class PokemonWild {
     this.name = data.name
     this.img = data.img || data.sprites
     if (typeof this.img === "object") {
-      this.img = this.img.front_default !== null ? this.img.front_default : this.img.other["official-artwork"].front_default !== null ? this.img.other["official-artwork"].front_default : "https://thiscatdoesnotexist.com"
+      this.img = this.img.front_default !== null ? this.img.other["official-artwork"].front_default : this.img.front_default !== null ? this.img.other["official-artwork"].front_default : "https://thiscatdoesnotexist.com"
     }
     this.weight = data.weight
     this.height = data.height
